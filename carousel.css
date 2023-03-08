@@ -71,27 +71,26 @@ body {
   letter-spacing: -.05rem;
 }
 
+video {
+  border: 1px solid black;
+}
 
-.controls {
 
-  opacity: 0.5;
- 
-  border-radius: 10px;
+
+.player {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+}
 
-  background-color: black;
-  box-shadow: 3px 3px 5px black;
-  transition: 1s all;
-  display: flex;
-}
-video:hover .controls, video:focus .controls {
-  opacity: 1;
-}
-button, .controls {
+
+
+.sound, .controls {
   background: linear-gradient(to bottom,#222,#666);
 }
+
+.player:hover .controls, player:focus .controls {
+  opacity: 1;
+}
+
 .sound:before {
   font-family: HeydingsControlsRegular;
   font-size: 20px;
@@ -100,6 +99,35 @@ button, .controls {
   color: #aaa;
   text-shadow: 1px 1px 0px black;
 }
+
+
+.play:before {
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sound:hover,.sound:focus {
+  box-shadow: inset 1px 1px 2px black;
+}
+
+.sound:active {
+  box-shadow: inset 3px 3px 2px black;
+}
+
+.active:before {
+  color: red;
+}
+
+
 
 
 
